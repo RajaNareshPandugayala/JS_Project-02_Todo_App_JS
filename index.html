@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS_Project-02_Todo_App_JS</title>
+</head>
+
+<body>
+    <div id="parent">
+        <button onclick="back()" class="hide backbutton">
+            Back </button>
+
+        <div class="task-list">
+
+            <h1 class="task-header">Tasks <span style="font-weight: lighter;">List</span></h1>
+            <h1 class="dashboard-heading"></h1>
+            <div onclick="showAddTask()" class="add-button">
+                <div class="add-button-icon">
+                    +
+                </div>
+                <div class="add-button-text">
+                    Add Item
+                </div>
+            </div>
+        </div>
+        <div id="cardcontainer"></div>
+
+        <p id="notask" class="boxh">No items in the todo list</p>
+
+
+        <div id="singleCard" class="hide"></div>
+
+    </div>
+    <!-- add task popup-->
+    <div class="box hide" id="addtaskpopup">
+        <h3>Add New List</h3>
+        <input type="text" id="cardname">
+
+        <button onclick="addCard()" class="addButton">Add</button>
+        <button onclick="hideAddTask()" class="closeButton">Close</button>
+    </div>
+    <div id="addItemPopup" class="box hide"></div>
+
+    <script src="style.js"></script>
+</body>
+
+</html>
